@@ -1,0 +1,204 @@
+/* Basic styling for TaskManagementPage */
+.task-management-section {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.task-management-section h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+}
+
+.task-list-section h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #34495e;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.loading-message,
+.error-message,
+.no-tasks-message {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+  font-style: italic;
+}
+
+.error-message {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.filter-options {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: flex-end; /* Align filter to the right */
+}
+
+.filter-options span {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.filter-options select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.filter-options select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  background-color: #fefefe;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease;
+}
+
+.task-item:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.task-item.completed {
+  background-color: #e6ffe6; /* Light green for completed tasks */
+  border-color: #c3e6cb;
+}
+
+.task-display {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.complete-checkbox {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.task-details {
+  flex-grow: 1;
+}
+
+.task-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.task-item.completed .task-title {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.task-description {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+}
+
+.task-actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-left: 10px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.task-actions button:hover {
+  transform: translateY(-1px);
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.edit-form input[type="text"],
+.edit-form textarea {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.edit-form button {
+  margin-top: 5px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-left: 0; /* Override default button margin */
+  width: fit-content;
+}
+
+.edit-form .save-button {
+  background-color: #28a745;
+  color: white;
+  margin-right: 10px;
+}
+
+.edit-form .save-button:hover {
+  background-color: #218838;
+}
+
+.edit-form .cancel-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.edit-form .cancel-button:hover {
+  background-color: #5a6268;
+}
